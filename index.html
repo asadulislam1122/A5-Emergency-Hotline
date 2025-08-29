@@ -24,8 +24,13 @@
     />
   </head>
   <body>
-    <header class="flex items-center justify-between px-6 py-3 shadow bg-white">
-      <div class="flex items-center gap-3">
+    <!--  mb-2 md:mb-0 -->
+    <!-- flex-col md:flex-row -->
+    <!-- flex-col sm:flex-row -->
+    <header
+      class="flex flex-col md:flex-row items-center justify-between px-6 py-3 shadow bg-white"
+    >
+      <div class="flex items-center gap-3 mb-2 md:mb-0">
         <img src="./assets/logo.png" class="w-10 h-10 rounded-full" alt="" />
         <div>
           <p class="font-hind font-bold text-green-800 leading-tight">
@@ -37,7 +42,7 @@
         </div>
       </div>
       <!--  -->
-      <div class="flex items-center gap-3">
+      <div class="flex flex-col sm:flex-row items-center gap-3">
         <div class="flex items-center gap-1 bg-green-50 px-3 py-1 rounded-full">
           <span id="hart-count">0</span>
           <img class="w-7 h-7" src="./assets/heart.png" alt="" />
@@ -54,7 +59,7 @@
     <main>
       <!-- banner section -->
       <section
-        class="font-hind text-white bg-blue-800 w-full h-[200px] flex flex-col justify-center items-center text-center gap-3"
+        class="font-hind text-white bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full h-[200px] flex flex-col justify-center items-center text-center gap-3"
       >
         <div>
           <img src="./assets/logo-dark.png" class="w-25" alt="" />
@@ -62,7 +67,7 @@
 
         <div>
           <p class="font-bold text-2xl">Emergency Service Directory</p>
-          <p class="text-sm">
+          <p class="text-sm mt-2">
             Government Emergency Services at Your Fingertip – A Project by
             Government of the People’s Republic of Bangladesh
           </p>
@@ -96,7 +101,9 @@
                     National Emergency Number
                   </h2>
                   <p class="text-sm text-gray-500">National Emergency</p>
-                  <p class="service-number text-2xl font-bold mt-2">999</p>
+                  <p class="service-number copy-number text-2xl font-bold mt-2">
+                    999
+                  </p>
                   <button class="btn btn-sm bg-gray-300 rounded-2xl">
                     All
                   </button>
@@ -131,7 +138,9 @@
                     Police Helpline Number
                   </h2>
                   <p class="text-sm text-gray-500">Polic</p>
-                  <p class="service-number text-2xl font-bold mt-2">999</p>
+                  <p class="service-number copy-number text-2xl font-bold mt-2">
+                    999
+                  </p>
                   <button class="btn btn-sm bg-gray-300 rounded-2xl">
                     Polic
                   </button>
@@ -164,7 +173,7 @@
                 <div class="flex flex-col justify-start items-start p-4">
                   <h2 class="font-bold text-lg">Fire Service Number</h2>
                   <p class="text-sm text-gray-500">Fire Service</p>
-                  <p class="text-2xl font-bold mt-2">999</p>
+                  <p class="copy-number text-2xl font-bold mt-2">999</p>
                   <button class="btn btn-sm bg-gray-300 rounded-2xl">
                     Fire
                   </button>
@@ -197,7 +206,7 @@
                 <div class="flex flex-col justify-start items-start p-4">
                   <h2 class="font-bold text-lg">Ambulance Service</h2>
                   <p class="text-sm text-gray-500">Ambulance</p>
-                  <p class="text-2xl font-bold mt-2">1994-999999</p>
+                  <p class="text-2xl copy-number font-bold mt-2">1994-999999</p>
                   <button class="btn btn-sm bg-gray-300 rounded-2xl">
                     Health
                   </button>
@@ -230,7 +239,7 @@
                 <div class="flex flex-col justify-start items-start p-4">
                   <h2 class="font-bold text-lg">Women & Child Helpline</h2>
                   <p class="text-sm text-gray-500">Women & Child Helpline</p>
-                  <p class="text-2xl font-bold mt-2">109</p>
+                  <p class="copy-number text-2xl font-bold mt-2">109</p>
                   <button class="btn btn-sm bg-gray-300 rounded-2xl">
                     Help
                   </button>
@@ -263,7 +272,7 @@
                 <div class="flex flex-col justify-start items-start p-4">
                   <h2 class="font-bold text-lg">Anti-Corruption Helpline</h2>
                   <p class="text-sm text-gray-500">Anti-Corruption</p>
-                  <p class="text-2xl font-bold mt-2">106</p>
+                  <p class="copy-number text-2xl font-bold mt-2">106</p>
                   <button class="btn btn-sm bg-gray-300 rounded-2xl">
                     Govt.
                   </button>
@@ -296,7 +305,7 @@
                 <div class="flex flex-col justify-start items-start p-4">
                   <h2 class="font-bold text-lg">Electricity Helpline</h2>
                   <p class="text-sm text-gray-500">Electricity Outage</p>
-                  <p class="text-2xl font-bold mt-2">16216</p>
+                  <p class="copy-number text-2xl font-bold mt-2">16216</p>
                   <button class="btn btn-sm bg-gray-300 rounded-2xl">
                     Electricity
                   </button>
@@ -329,7 +338,7 @@
                 <div class="flex flex-col justify-start items-start p-4">
                   <h2 class="font-bold text-lg">Brac Helpline</h2>
                   <p class="text-sm text-gray-500">Brac</p>
-                  <p class="text-2xl font-bold mt-2">16445</p>
+                  <p class="copy-number text-2xl font-bold mt-2">16445</p>
                   <button class="btn btn-sm bg-gray-300 rounded-2xl">
                     NGO
                   </button>
@@ -362,7 +371,7 @@
                 <div class="flex flex-col justify-start items-start p-4">
                   <h2 class="font-bold text-lg">Bangladesh Railway Helpline</h2>
                   <p class="text-sm text-gray-500">Bangladesh Railway</p>
-                  <p class="text-2xl font-bold mt-2">163</p>
+                  <p class="copy-number text-2xl font-bold mt-2">163</p>
                   <button class="btn btn-sm bg-gray-300 rounded-2xl">
                     Travel
                   </button>

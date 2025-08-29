@@ -12,6 +12,7 @@ hearts.forEach((heart) => {
 });
 
 // copy button
+
 const copyCounts = document.getElementById("copy-count");
 let counts = 0;
 
@@ -19,6 +20,10 @@ const copys = document.querySelectorAll(".copy-btn");
 
 copys.forEach((copy) => {
   copy.addEventListener("click", () => {
+    const number =
+      copy.parentNode.parentNode.querySelector(".copy-number").innerText;
+
+    alert("✅ নাম্বার কপি হয়েছে " + number);
     counts++;
     copyCounts.textContent = counts;
   });
