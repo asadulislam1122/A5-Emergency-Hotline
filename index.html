@@ -39,11 +39,11 @@
       <!--  -->
       <div class="flex items-center gap-3">
         <div class="flex items-center gap-1 bg-green-50 px-3 py-1 rounded-full">
-          <span>0</span>
+          <span id="hart-count">0</span>
           <img class="w-7 h-7" src="./assets/heart.png" alt="" />
         </div>
         <div class="flex items-center gap-1 bg-green-50 px-3 py-1 rounded-full">
-          <span>100</span>
+          <span id="coin-count">100</span>
           <img src="./assets/coin.png" alt="coin" class="w-7 h-7" />
         </div>
         <button class="bg-green-600 text-white px-4 py-1 rounded-full">
@@ -69,10 +69,11 @@
         </div>
       </section>
       <!-- card section -->
+      <!-- grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 -->
 
       <section
         id="prodect-cointaier"
-        class="w-11/12 mx-auto py-10 grid md:grid-cols-12 gap-8 font-hind"
+        class="w-11/12 md:mx-auto ml-[45px] py-10 grid md:grid-cols-12 gap-8 font-hind"
       >
         <section id="product-box" class="md:col-span-9">
           <div class="railway-card">
@@ -91,9 +92,11 @@
                   </div>
                 </figure>
                 <div class="flex flex-col justify-start items-start p-4">
-                  <h2 class="font-bold text-lg">National Emergency Number</h2>
+                  <h2 class="service-name font-bold text-lg">
+                    National Emergency Number
+                  </h2>
                   <p class="text-sm text-gray-500">National Emergency</p>
-                  <p class="text-2xl font-bold mt-2">999</p>
+                  <p class="service-number text-2xl font-bold mt-2">999</p>
                   <button class="btn btn-sm bg-gray-300 rounded-2xl">
                     All
                   </button>
@@ -103,7 +106,9 @@
                   <button class="btn w-30 text-gray-400 rounded-lg">
                     <i class="fa-solid fa-copy"></i> Copy
                   </button>
-                  <button class="btn w-30 text-white bg-green-700 rounded-lg">
+                  <button
+                    class="call-btn btn w-30 text-white bg-green-700 rounded-lg"
+                  >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
@@ -122,9 +127,11 @@
                   </div>
                 </figure>
                 <div class="flex flex-col justify-start items-start p-4">
-                  <h2 class="font-bold text-lg">Police Helpline Number</h2>
+                  <h2 class="service-name font-bold text-lg">
+                    Police Helpline Number
+                  </h2>
                   <p class="text-sm text-gray-500">Polic</p>
-                  <p class="text-2xl font-bold mt-2">999</p>
+                  <p class="service-number text-2xl font-bold mt-2">999</p>
                   <button class="btn btn-sm bg-gray-300 rounded-2xl">
                     Polic
                   </button>
@@ -134,7 +141,9 @@
                   <button class="btn w-30 text-gray-400 rounded-lg">
                     <i class="fa-solid fa-copy"></i> Copy
                   </button>
-                  <button class="btn w-30 text-white bg-green-700 rounded-lg">
+                  <button
+                    class="call-btn btn w-30 text-white bg-green-700 rounded-lg"
+                  >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
@@ -165,7 +174,9 @@
                   <button class="btn w-30 text-gray-400 rounded-lg">
                     <i class="fa-solid fa-copy"></i> Copy
                   </button>
-                  <button class="btn w-30 text-white bg-green-700 rounded-lg">
+                  <button
+                    class="call-btn btn w-30 text-white bg-green-700 rounded-lg"
+                  >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
@@ -196,7 +207,9 @@
                   <button class="btn w-30 text-gray-400 rounded-lg">
                     <i class="fa-solid fa-copy"></i> Copy
                   </button>
-                  <button class="btn w-30 text-white bg-green-700 rounded-lg">
+                  <button
+                    class="call-btn btn w-30 text-white bg-green-700 rounded-lg"
+                  >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
@@ -227,7 +240,9 @@
                   <button class="btn w-30 text-gray-400 rounded-lg">
                     <i class="fa-solid fa-copy"></i> Copy
                   </button>
-                  <button class="btn w-30 text-white bg-green-700 rounded-lg">
+                  <button
+                    class="call-btn btn w-30 text-white bg-green-700 rounded-lg"
+                  >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
@@ -258,7 +273,9 @@
                   <button class="btn w-30 text-gray-400 rounded-lg">
                     <i class="fa-solid fa-copy"></i> Copy
                   </button>
-                  <button class="btn w-30 text-white bg-green-700 rounded-lg">
+                  <button
+                    class="call-btn btn w-30 text-white bg-green-700 rounded-lg"
+                  >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
@@ -289,7 +306,9 @@
                   <button class="btn w-30 text-gray-400 rounded-lg">
                     <i class="fa-solid fa-copy"></i> Copy
                   </button>
-                  <button class="btn w-30 text-white bg-green-700 rounded-lg">
+                  <button
+                    class="call-btn btn w-30 text-white bg-green-700 rounded-lg"
+                  >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
@@ -320,7 +339,9 @@
                   <button class="btn w-30 text-gray-400 rounded-lg">
                     <i class="fa-solid fa-copy"></i> Copy
                   </button>
-                  <button class="btn w-30 text-white bg-green-700 rounded-lg">
+                  <button
+                    class="call-btn btn w-30 text-white bg-green-700 rounded-lg"
+                  >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
@@ -351,7 +372,9 @@
                   <button class="btn w-30 text-gray-400 rounded-lg">
                     <i class="fa-solid fa-copy"></i> Copy
                   </button>
-                  <button class="btn w-30 text-white bg-green-700 rounded-lg">
+                  <button
+                    class="call-btn btn w-30 text-white bg-green-700 rounded-lg"
+                  >
                     <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
@@ -361,8 +384,8 @@
           </div>
         </section>
         <!-- call History -->
-        <aside id="cart-box" class="col-span-3 shadow-lg">
-          <div class="flex justify-between p-4 items-center">
+        <aside id="history-list" class="col-span-3 shadow-lg">
+          <div class="flex justify-between p-8 items-center">
             <p class="font-semibold">
               <i class="fa-regular fa-clock"></i> Call History
             </p>
@@ -374,5 +397,7 @@
         </aside>
       </section>
     </main>
+    <!-- SCRIPT -->
+    <script src="./script/index.js"></script>
   </body>
 </html>
